@@ -1,0 +1,326 @@
+
+/***링크***/
+@import url(animate.css);
+
+
+/*******************************폰트****************************************/
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HallymGothic-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*******************************공통 요소***********************************/
+*{
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'HallymGothic-Regular';
+}
+
+ul{list-style: none;}
+
+
+
+/******************************* 헤더 & 네비 **************************/
+
+header{
+    width: 100%;
+    height: 1080px;
+    color:white;
+    padding: 3%;
+    box-sizing: border-box;
+    background-color: #3ca2e6;   
+    background-image: url(../images/bg4.png),url(../images/fish1.png),url(../images/fish2.png),url(../images/fish3.png) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain,200px,200px,200px;
+    background-position: center bottom, top left, right center, center bottom;
+
+}
+
+/**********************************************************************/
+
+.top{
+    width: 100%; 
+    height: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    position: relative; /*for bg fishes*/
+}
+
+
+
+/**********************************start bg fishes**********************************/
+
+
+.fly2{
+    animation: fly 30s infinite ease-in-out;
+    position: absolute;
+    top: 700px;
+    left: 20%;
+}
+
+
+
+@keyframes fly{
+    0%{transform: translateX(-300%) scale(100%);}
+    50%{transform: translateX(0%) scale(300%);}
+    100%{ transform: translateX(600%) scale(80%);}
+}
+
+
+
+/**********************************end bg fishes**********************************/
+.logoset{
+    position: fixed;
+    top: 3%;
+    right: 3%;
+}
+
+.top_text{
+    animation: img_rotate 100s infinite linear;
+}
+
+
+
+.top h1{
+    width: 100%;    
+    height: 10%;
+    font-size: 60px;
+    margin-bottom: 5px;
+    text-align: left;
+    animation: showup 2s ease-in-out;
+}
+
+.top p{
+    width: 100%;   
+    height: 5%;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: left;
+    animation: showup 2.5s ease-in-out;
+}
+
+
+.gototop{
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #113a67;
+    text-align: center;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    border: none;
+    color: #fff;
+    z-index: 100;
+
+}
+
+
+/************************ sec1 1************************/
+#myBtnContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+
+.myBtnContainer1{
+    width: 50%;
+    height: 80%;
+    margin-left: 9%;
+    animation: slideleft 2.5s ease-in-out;
+
+
+}
+
+.myBtnContainer2{
+    width: 40%;
+    height: 80%;
+    padding-top: 60px;
+    box-sizing: border-box;
+    animation: slideright 2.5s ease-in-out;
+
+}
+
+
+
+.menuline{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+
+} 
+.menubox{
+    width: 150px;
+    border: 2px solid rgba(177, 174, 174, 0.5);
+    border-radius: 10px;
+}
+
+.menubox:hover{
+    background-color: rgba(22, 80, 141, 0.5);
+}
+.menubox1:hover{
+    background-color: rgba(22, 80, 141, 0.5);
+
+}
+
+.menubox1{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid rgba(177, 174, 174, 0.5);
+    border-radius: 10px;
+}
+
+.menubox1 li{
+    display: inline-block;
+}
+
+
+.btn.active{
+    width: 150px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #464646;
+    border: none;
+    box-shadow: #eee 1px 1px;
+    border-radius: 10px 10px 10px 10px;
+    font-weight: bolder;
+    
+}
+
+    
+.btn{
+    width: 150px;
+    font-size: 19px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 10px 10px 10px 10px ;
+    
+}
+
+.btnbig{
+    background-color: #16508d;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+/**************************fishlist******************************/
+
+.sec2{
+    width: 99%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.row:after, .row::before {content: "";display: block;clear: both;} 
+.column {
+    float: left;
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Content */
+.content {
+    width: 100%;
+    opacity: 0;
+    position: relative;
+    top:400px;
+    text-align: left;
+    padding: 30px 10px;
+    box-sizing: border-box;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+.column h1{
+    padding-top: 5px;
+    font-size: 40px;
+    box-sizing: border-box;
+
+}
+    
+    
+.column h2{
+    padding-top: 5px;
+    font-size: 20px;
+    box-sizing: border-box;
+
+}
+
+
+
+/*********************@mediaq.**************************/
+
+@media screen and (max-width: 700px){
+
+
+
+
+    .top{
+    width: 100%;
+        padding: 150px  50px 0px 50px;
+        box-sizing: border-box;
+        background-color: yellow;
+    }
+
+    .top h2{
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+
+    #myBtnContainer{
+        width: 100%; 
+        text-align: center;
+    }
+
+
+}
+
+
+/****************************animation*********************************/
+@keyframes img_rotate{
+    0%{transition: 200s; transform: rotate(0deg);}
+    100%{transition: 200s; transform: rotate(360deg);}
+}
+@keyframes showup{
+    0%{opacity: 0; transform: translateY(50%);}
+    100%{opacity: 1; transform: translatY(0);}
+
+}
+@keyframes slideleft{
+    0%{opacity: 0; transform: translateX(-50%); transform: scale(101%);}
+    100%{opacity: 1; transform: translateX(0); transform: scale(100%);}
+
+}
+@keyframes slideright{
+    0%{opacity: 0; transform: translateX(50%); transform: scale(101%);}
+    100%{opacity: 1; transform: translateX(0); transform: scale(100%);}
+
+}
+

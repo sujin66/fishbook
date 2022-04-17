@@ -34,18 +34,19 @@ a{text-decoration: none; color: inherit;}
 
 header{
     width: 100%;
-    height: 1080px;
+    height: 1200px;
     color:white;
     padding: 2% 8%;
     box-sizing: border-box;
     background-color: #3ca2e6;   
-    background-image: url(../images/bg4.png),url(../images/fish1.png),url(../images/fish2.png),url(../images/fish3.png) ;
+    background-image: url(../images/bg4.png),url(../images/fish3.png) ;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: contain,200px,200px,200px;
-    background-position: center bottom, top left, right center, center bottom;
+    background-position: center bottom, center bottom;
+    overflow: hidden;
 
 }
 
@@ -62,21 +63,39 @@ header{
 
 
 /**********************************start bg fishes**********************************/
+.fly{
+    width: 100px;
+    position: absolute;
+    top: 500px;
+    left: 2%;
+    animation: updown 5s infinite ease-in-out;
+}
 
 .fly2{
-    animation: slideleft 20s infinite ease-in-out;
-    position: absolute;
-    top: 700px;
-    left: 40%;
-}
-.fly3{
+    width: 50px;
     animation: updown 3s infinite ease-in-out;
     position: absolute;
-    top: 200px;
-    right: 5%;
+    top: 750px;
+    left: 52%;
     opacity: 0.5;
 }
 
+.fly3{
+    width: 200px;
+    animation: wave 30s infinite ease-in-out;
+    position: absolute;
+    top: 25px;
+    left: 1%;
+}
+
+.fly4{
+    width: 200px;
+    animation: updown 5s infinite ease-in-out;
+    position: absolute;
+    top: 830px;
+    left: 52%;
+    opacity: 0.4;
+}
 
 
 
@@ -85,6 +104,7 @@ header{
     position: fixed;
     top: 3%;
     right: 3%;
+    z-index: 99;
 }
 
 .top_text{
@@ -118,8 +138,8 @@ header{
     background-color: #113a67;
     text-align: center;
     position: fixed;
-    bottom: 10%;
-    right: 5%;
+    bottom: 5%;
+    right: 3%;
     border: none;
     color: #fff;
     z-index: 100;
@@ -132,7 +152,8 @@ header{
 .navimenu{
     position: fixed;
     top: 28%;
-    right: 1%;
+    right: 1.5%;
+    text-align: left;
 }
 
 .submenu li{
@@ -140,16 +161,22 @@ header{
     padding-right: 50px;
     margin-bottom: 10px;
     font-weight: bolder;
-
+    border-bottom: 2px solid transparent;
 }
+
+.submenu li a:hover{
+    color:#113a67;
+    font-weight: bolder;
+}
+
+
 
 
 /************************ sec1 1************************/
 #myBtnContainer{
     width: 90%;
     height: auto;
-    padding-top: 50px;
-    position: inherit;
+    position: relative;
 }
 
 #myBtnContainer::after, #myBtnContainer::before{
@@ -163,8 +190,8 @@ header{
     animation: spark 2.5s ease-in-out;
     float:left;
     position: absolute;
-    top: 100px;
-    left: 130px;
+    top: 50px;
+    left: 100px;
 }
 
 .myBtnContainer2{
@@ -175,8 +202,8 @@ header{
     animation: spark 2.5s ease-in-out;
     float:left;
     position: absolute;
-    top: 100px;
-    left: 820px;
+    top: 50px;
+    left: 790px;
 }
 
 
@@ -221,7 +248,7 @@ header{
 
 .btn.active{
     width: 150px;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     background-color: #464646;
     border: none;
@@ -234,7 +261,7 @@ header{
     
 .btn{
     width: 150px;
-    font-size: 19px;
+    font-size: 18px;
     color: #fff;
     background-color: transparent;
     border: none;
@@ -247,7 +274,7 @@ header{
 .btnbig{
     background-color: #16508d;
     height: 40px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 10px 10px 10px 10px;
 }
 
@@ -346,9 +373,9 @@ header{
 }
 
 @keyframes updown{
-    0%{transform: translateY(-2%);}
+    0%{transform: translateY(-10%);}
     50%{transform: translateY(0%);}
-    100%{transform: translateY(-2%);}
+    100%{transform: translateY(-10%);}
 }
 
 @keyframes slideleft{
@@ -356,5 +383,18 @@ header{
     50%{transform: translateY(0%) translateX(-20%) scale(150%);}
     100%{transform: translateY(200%) translateX(500%) scale(100%);}
 }
+
+@keyframes wave{
+    0%{transform: translateX(-300%) translateY(0%) scale(300%);}
+    50%{transform: translateX(300%) translateY(-150%) scale(100%); opacity: 0;}
+    100%{transform: translateX(20000%) translateY(100%) scale(0%);}
+}
+
+
+
+
+
+
+
 
 

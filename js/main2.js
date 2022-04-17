@@ -142,22 +142,45 @@ $(window).scroll(function(){
     }
 });
 
-function myAnimate(){
-    let start = (oldLine+1)*4;
-    if(nowLine==0){
-        start = 0;
+// function myAnimate(){
+//     let start = (oldLine+1)*4;
+//     if(nowLine==0){
+//         start = 0;
+//     }
+//     oldLine = nowLine;
+//     for (i = start; i < nowSelect.length && i < (nowLine+1)*4; i++) {
+//         nowSelect.eq(i).find('.content')
+//         .delay((i-nowLine*4)*500)
+//         .animate({
+//             opacity:1,
+//             top:0
+//         },700,'easeOutExpo');
+//     }
+//     canGoing=true;
+//     $(window).scroll();
+// }
+
+function myAnimate() {
+    let start = oldLine * 4;
+    if (nowLine == 0) {
+      start = 0;
     }
     oldLine = nowLine;
-    for (i = start; i < nowSelect.length && i < (nowLine+1)*4; i++) {
-        nowSelect.eq(i).find('.content')
-        .delay((i-nowLine*4)*500)
-        .animate({
-            opacity:1,
-            top:0
-        },700,'easeOutExpo');
+  
+    for (i = start; i < oldLine * 4; i++) {
+      nowSelect
+        .eq(i)
+        .find(".content")
+        .delay((i - nowLine * 4) * 800)
+        .animate(
+          {
+            opacity: 1,
+            top: 0,
+          },
+          3000,
+          "easeOutExpo"
+        );
     }
-    canGoing=true;
+    canGoing = true;
     $(window).scroll();
-}
-
-
+  }

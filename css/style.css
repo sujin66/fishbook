@@ -25,7 +25,8 @@
     font-family: 'HallymGothic-Regular';
 }
 
-ul{list-style: none;}
+ul li{list-style: none;}
+a{text-decoration: none; color: inherit;}
 
 
 
@@ -35,7 +36,7 @@ header{
     width: 100%;
     height: 1080px;
     color:white;
-    padding: 3%;
+    padding: 2% 8%;
     box-sizing: border-box;
     background-color: #3ca2e6;   
     background-image: url(../images/bg4.png),url(../images/fish1.png),url(../images/fish2.png),url(../images/fish3.png) ;
@@ -62,21 +63,20 @@ header{
 
 /**********************************start bg fishes**********************************/
 
-
 .fly2{
-    animation: fly 30s infinite ease-in-out;
+    animation: slideleft 20s infinite ease-in-out;
     position: absolute;
     top: 700px;
-    left: 20%;
+    left: 40%;
+}
+.fly3{
+    animation: updown 3s infinite ease-in-out;
+    position: absolute;
+    top: 200px;
+    right: 5%;
+    opacity: 0.5;
 }
 
-
-
-@keyframes fly{
-    0%{transform: translateX(-300%) scale(100%);}
-    50%{transform: translateX(0%) scale(300%);}
-    100%{ transform: translateX(600%) scale(80%);}
-}
 
 
 
@@ -94,8 +94,7 @@ header{
 
 
 .top h1{
-    width: 100%;    
-    height: 10%;
+    width: 100%;
     font-size: 60px;
     margin-bottom: 5px;
     text-align: left;
@@ -103,8 +102,7 @@ header{
 }
 
 .top p{
-    width: 100%;   
-    height: 5%;
+    width: 100%;
     font-size: 18px;
     margin-bottom: 15px;
     text-align: left;
@@ -129,23 +127,44 @@ header{
 }
 
 
-/************************ sec1 1************************/
-#myBtnContainer{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
+
+/*************************네비메뉴***********************/
+.navimenu{
+    position: fixed;
+    top: 28%;
+    right: 1%;
+}
+
+.submenu li{
+    font-size: 1.5em;
+    padding-right: 50px;
+    margin-bottom: 10px;
+    font-weight: bolder;
 
 }
+
+
+/************************ sec1 1************************/
+#myBtnContainer{
+    width: 90%;
+    height: auto;
+    padding-top: 50px;
+    position: inherit;
+}
+
+#myBtnContainer::after, #myBtnContainer::before{
+    display: block; content: ''; clear: both;
+}
+
 
 .myBtnContainer1{
     width: 50%;
     height: 80%;
-    margin-left: 9%;
-    animation: slideleft 2.5s ease-in-out;
-
-
+    animation: spark 2.5s ease-in-out;
+    float:left;
+    position: absolute;
+    top: 100px;
+    left: 130px;
 }
 
 .myBtnContainer2{
@@ -153,8 +172,11 @@ header{
     height: 80%;
     padding-top: 60px;
     box-sizing: border-box;
-    animation: slideright 2.5s ease-in-out;
-
+    animation: spark 2.5s ease-in-out;
+    float:left;
+    position: absolute;
+    top: 100px;
+    left: 820px;
 }
 
 
@@ -168,8 +190,12 @@ header{
 } 
 .menubox{
     width: 150px;
-    border: 2px solid rgba(177, 174, 174, 0.5);
+    border: 3px solid rgba(177, 174, 174, 0.5);
     border-radius: 10px;
+}
+
+.linebox div{
+    margin-bottom: 10px;
 }
 
 .menubox:hover{
@@ -181,7 +207,8 @@ header{
 }
 
 .menubox1{
-    width: 100%;
+    width: 480px;
+    height: 580px;
     box-sizing: border-box;
     border: 2px solid rgba(177, 174, 174, 0.5);
     border-radius: 10px;
@@ -310,17 +337,24 @@ header{
 }
 @keyframes showup{
     0%{opacity: 0; transform: translateY(50%);}
-    100%{opacity: 1; transform: translatY(0);}
-
+    100%{opacity: 1; transform: translateY(0%);}
 }
+
+@keyframes spark{
+    0%{opacity: 0; transform: scale(100%);}
+    100%{opacity: 1; transform: scale(100%);}
+}
+
+@keyframes updown{
+    0%{transform: translateY(-2%);}
+    50%{transform: translateY(0%);}
+    100%{transform: translateY(-2%);}
+}
+
 @keyframes slideleft{
-    0%{opacity: 0; transform: translateX(-50%); transform: scale(101%);}
-    100%{opacity: 1; transform: translateX(0); transform: scale(100%);}
-
+    0%{transform: translateY(100%) translateX(-400%) scale(70%);}
+    50%{transform: translateY(0%) translateX(-20%) scale(150%);}
+    100%{transform: translateY(200%) translateX(500%) scale(100%);}
 }
-@keyframes slideright{
-    0%{opacity: 0; transform: translateX(50%); transform: scale(101%);}
-    100%{opacity: 1; transform: translateX(0); transform: scale(100%);}
 
-}
 

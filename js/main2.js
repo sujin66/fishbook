@@ -25,6 +25,7 @@ $('.btn').click(function(){
 
 
 
+
 $(window).scroll(function(){
     if(canGoing){
         canGoing = false;
@@ -133,6 +134,8 @@ $(window).scroll(function(){
             nowLine =50;
         }else if(nowST>20800 && nowST<=21200){
             nowLine =51;
+        }else if(nowST>21200 && nowST<=21600){
+            nowLine =52;
         }
         if(nowLine>oldLine){
             myAnimate();

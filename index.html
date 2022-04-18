@@ -10,264 +10,256 @@
     <meta property="og:image" content="images/logo.png"><!--이미지-->
     <meta property="og:description" content="굿다이버 어류도감"><!--사이트설명-->
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" cont
+    
+    
+    ent="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="images/png" sizes="16x16" href="images/favicon.ico">
     <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
-    <!--header-->
-     <header>              
-        <!--top about us-->
+
+    <!--intro main--> 
+     <header>    
+        <img src="images/bg4.png" alt="배경뒷" class="bgscroll2">     
+
         <div class="top">
-            <a href="index.html">
-                <div class="logo">
-                    <img src="images/logo4_frame.png" class="top_logo logoset">
-                    <img src="images/logo4_blue.png" class="top_text logoset img_rotate">
+            <!--header left-top_aboutus-->    
+            <div class="left-top">
+                <div class="ltop_text">
+                    <h1>GOOD DIVER 물고기반</h1>
+                    <p>제주 서귀포 주변 해역에 서식하는 어종의 다양성을 이해하고 기후 변화에 따른 해양생태와 어종의 변화를 관찰·기록하는 다이버들의 모임입니다.</p>
                 </div>
-            </a>
-            
-            <div class="navimenu">
-                <ul class="submenu">
-                    <li><a href="#">물고기반 뉴스</a></li>
-                    <li><a href="#">굿다이버스</a></li>
-                    <li><a href="#">참고사이트</a></li>
-                </ul>
             </div>
-            
 
-                <h1>GOOD DIVER 물고기반</h1>
-                <p>제주 서귀포 주변 해역에 서식하는 어종의 다양성을 이해하고 기후 변화에 따른 해양생태와 어종의 변화를관찰·기록하는 다이버들의 모임입니다.</p>
-
-                    <a href="index.html"><button class="gototop">△</button></a>
-                    <img src="images/fish1.png" alt="물고기아이콘" class="fly">
-                    <img src="images/graph_ico4_r.png" alt="물고기아이콘" class="fly2">
-
-            <!--start fishselector-->
-            <div id="myBtnContainer">
-
-
+            <!--header left-bottom-->
+            <div class="left-bottom"><!--mybtncon1 (60%) & mybtncon12 (40%) -->
                 <div class="myBtnContainer1">
+                    <!--select all-->
                     <div class="menuline">
-                        <!--fishlist by order load all-->
                         <div class="menubox">
                         <button class="btn active btnbig" onclick="filterSelection('all')">어종 전체보기</button>
-                    </div><!--menugr_all-->
-                </div>
-            
+                        </div>
+                    </div><!--box1-->
 
-                <div class="menuline">
-                    <!--fishlist by order1-->
-                    <div class="menubox">
-                        <button class="btn btnbig" onclick="filterSelection('group_j')">숭어목</button>
-                        <ul>
-                            <li><button class="btn" onclick="filterSelection('group_j1')">숭어과</button></li>
-                        </ul>
-                    </div>
-
-                    <!--fishlist by order2-->
-                    <div class="menubox">
-                        <button class="btn btnbig" onclick="filterSelection('group_b')">금눈돔목</button>
-                        <ul>
-                            <li><button class="btn" onclick="filterSelection('group_b1')">철갑둥어과</button></li>
-                        </ul>
-                    </div>
-                
-                    <!--fishlist by order3-->
-                    <div class="menubox">
-                        <button class="btn btnbig" onclick="filterSelection('group_d')">달고기목</button>
-                        <ul>
-                            <li><button class="btn" onclick="filterSelection('group_d1')">달고기과</button></li>
-                        </ul>
-                    </div>
-
-                    <!--fishlist by order4-->
-                    <div class="menubox">
-                        <button class="btn btnbig" onclick="filterSelection('group_e')">대구목</button>
-                        <ul>
-                            <li><button class="btn" onclick="filterSelection('group_e1')">돌대구과</button></li>
-                        </ul>
-                    </div>
-
-
-                </div><!--menugr1-->
-               
-                <div class="menuline">
-                    <!--fishlist by order6-->                    
-                    <div class="menubox">
-                        <button class="btn btnbig" onclick="filterSelection('group_g')">메기목</button>
-                        <ul>
-                            <li><button class="btn" onclick="filterSelection('group_g1')">쏠종개과</button></li>
-                        </ul>
-                    </div>
-
-                    <!--fishlist by order7-->                    
-                    <div class="menubox">
-                        <button class="btn btnbig" onclick="filterSelection('group_r')">매가오리목</button>
-                        <ul>
-                            <li><button class="btn" onclick="filterSelection('group_r1')">흰가오리과</button></li>
-                        </ul>
-                    </div>
-
-                    <!--fishlist by order8-->
-                    <div class="menubox">
-                        <button class="btn btnbig" onclick="filterSelection('group_k')">실고기목</button>
-                        <ul>
-                            <li> <button class="btn" onclick="filterSelection('group_k1')">실고기과</button></li>
-                        </ul>
-                    </div>
-
-                    <!--fishlist by order9-->                    
-                    <div class="menubox">
-                        <button class="btn btnbig" onclick="filterSelection('group_i')">색줄멸목</button>
-                        <ul>
-                            <li><button class="btn" onclick="filterSelection('group_i1')">물꽃치과</button></li>
-                        </ul>
-                    </div>
-                </div><!--menugr2--> 
-
-                <div class="menuline">
-                    <!--fishlist by order14-->                    
-                    <div class="menubox">
-                        <button class="btn btnbig" onclick="filterSelection('group_n')">청어목</button>
-                        <ul>
-                            <li><button class="btn" onclick="filterSelection('group_n1')">청어과</button></li>
-                        </ul>
-                    </div>
-
-                    <!--fishlist by order15-->                    
-                    <div class="menubox">
-                        <button class="btn btnbig" onclick="filterSelection('group_o')">큰가시고기목</button>
-                        <ul>
-                            <li><button class="btn" onclick="filterSelection('group_o1')">대치과</button></li>
-                        </ul>
-                    </div>
-
-                    <!--fishlist by order16-->                    
-                    <div class="menubox">
-                        <button class="btn btnbig" onclick="filterSelection('group_p')">홍어목</button>
-                        <ul>
-                            <li><button class="btn" onclick="filterSelection('group_p1')">홍어과</button></li>
-                        </ul>
-                    </div>
-    
-                    <!--fishlist by order17-->                    
-                    <div class="menubox">
-                        <button class="btn btnbig" onclick="filterSelection('group_q')">전기가오리목</button>
-                        <ul>
-                            <li><button class="btn" onclick="filterSelection('group_q1')">전기가오리과</button></li>
-                        </ul>
-                    </div>
-                </div><!--menugr4--> 
-
-                <div class="menuline">
-                    <div class="linebox">
-                        <!--fishlist by order11-->                             
+                    <!--btns-->
+                    <div class="menuline"><!--1/4*3-->
                         <div class="menubox">
-                            <button class="btn btnbig" onclick="filterSelection('group_f')">동갈치목</button>
+                            <button class="btn btnbig" onclick="filterSelection('group_j')">숭어목</button>
                             <ul>
-                                <li> <button class="btn" onclick="filterSelection('group_f1')">동갈치과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_j1')">숭어과</button></li>
                             </ul>
                         </div>
 
-                        <!--fishlist by order13-->                    
                         <div class="menubox">
-                            <button class="btn btnbig" onclick="filterSelection('group_m')">아귀목</button>
+                            <button class="btn btnbig" onclick="filterSelection('group_b')">금눈돔목</button>
                             <ul>
-                                <li><button class="btn" onclick="filterSelection('group_m1')">씬벵이과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_b1')">철갑둥어과</button></li>
                             </ul>
                         </div>
-                        
-                        <!--fishlist by order18-->                    
-                        <div class="menubox">
-                            <button class="btn btnbig" onclick="filterSelection('group_s')">홍메치목</button>
-                            <ul>
-                                <li><button class="btn" onclick="filterSelection('group_s1')">매퉁이과</button></li>
-                            </ul>
-                        </div>
-                    </div><!--tempbox-->
-
-                    <!--fishlist by order10-->                    
                     
-
-                <!--fishlist by order12-->                    
-                    <div class="menubox">
-                        <button class="btn btnbig" onclick="filterSelection('group_l')">쏨뱅이목</button>
-                        <ul class="lineitem">
-                            <li><button class="btn" onclick="filterSelection('group_l1')">둑중개과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_l2')">성대과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_l3')">양볼락과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_l4')">양태과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_l5')">쥐노래미과</button></li>
-                        </ul>
-                    </div>
-
-                    <div class="menubox">
-                        <button class="btn btnbig" onclick="filterSelection('group_h')">복어목</button>
-                        <ul class="lineitem">
-                            <li><button class="btn" onclick="filterSelection('group_h1')">가시복과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_h2')">거북복과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_h3')">쥐치과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_h4')">참복과</button></li>                    
-                        </ul>
-                    </div>
-
-                    <div class="menubox">
-                        <button class="btn btnbig" onclick="filterSelection('group_a')">가자미목</button>
-                            <ul class="lineitem">
-                                <li><button class="btn" onclick="filterSelection('group_a1')">넙치과</button></li>
-                                <li><button class="btn" onclick="filterSelection('group_a2')">둥글넙치과</button></li>
+                        <div class="menubox">
+                            <button class="btn btnbig" onclick="filterSelection('group_d')">달고기목</button>
+                            <ul>
+                                <li><button class="btn" onclick="filterSelection('group_d1')">달고기과</button></li>
                             </ul>
-                    </div>
-                </div>
-            </div><!--container1-->   
+                        </div>
 
-            <div class="myBtnContainer2">  
-                <!--fishlist by order19-->
-                <div class="menuline">
-                    <div class="menubox1">
-                        <button class="btn btnbig" onclick="filterSelection('group_c')">농어목</button>
-                        <ul class="lineitem">
-                            <li><button class="btn" onclick="filterSelection('group_c1')">갈돔과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c2')">깃대돔과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c3')">나비고기과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c4')">놀래기과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c5')">돌돔과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c6')">동갈돔과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c7')">돛양태과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c8')">망둑어과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c9')">망상어과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c10')">바리과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c11')">비늘돔과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c12')">비늘베도라치과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c13')">샛돔과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c14')">양동미리과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c15')">육돈바리과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c16')">자리돔과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c17')">전갱이과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c18')">주걱치과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c19')">청베도라치과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c20')">청줄돔과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c21')">청황문절과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c22')">촉수과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c23')">파랑비늘돔과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c24')">하스돔과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c25')">활치과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c26')">황줄깜정이과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c27')">뿔돔과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c28')">게르치과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c29')">도미과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c30')">황줄돔과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c31')">가시돔과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c32')">다동가리과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c33')">먹도라치과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c34')">독가시치과</button></li>
-                            <li><button class="btn" onclick="filterSelection('group_c35')">양쥐돔과</button></li>
-                        </ul>
+                        <div class="menubox">
+                            <button class="btn btnbig" onclick="filterSelection('group_e')">대구목</button>
+                            <ul>
+                                <li><button class="btn" onclick="filterSelection('group_e1')">돌대구과</button></li>
+                            </ul>
+                        </div>
+                    </div><!--1/4*3-->
+                
+                    <div class="menuline"><!--2/4*3-->                
+                        <div class="menubox">
+                            <button class="btn btnbig" onclick="filterSelection('group_g')">메기목</button>
+                            <ul>
+                                <li><button class="btn" onclick="filterSelection('group_g1')">쏠종개과</button></li>
+                            </ul>
+                        </div>
+                  
+                        <div class="menubox">
+                            <button class="btn btnbig" onclick="filterSelection('group_r')">매가오리목</button>
+                            <ul>
+                                <li><button class="btn" onclick="filterSelection('group_r1')">흰가오리과</button></li>
+                            </ul>
+                        </div>
+
+                        <div class="menubox">
+                            <button class="btn btnbig" onclick="filterSelection('group_k')">실고기목</button>
+                            <ul>
+                                <li> <button class="btn" onclick="filterSelection('group_k1')">실고기과</button></li>
+                            </ul>
+                        </div>
+                 
+                        <div class="menubox">
+                            <button class="btn btnbig" onclick="filterSelection('group_i')">색줄멸목</button>
+                            <ul>
+                                <li><button class="btn" onclick="filterSelection('group_i1')">물꽃치과</button></li>
+                            </ul>
+                        </div>
+                    </div><!--2/4*3-->  
+
+                    <div class="menuline"><!--3/4*3-->  
+                        <div class="menubox">
+                            <button class="btn btnbig" onclick="filterSelection('group_n')">청어목</button>
+                            <ul>
+                                <li><button class="btn" onclick="filterSelection('group_n1')">청어과</button></li>
+                            </ul>
+                        </div>
+
+                        <div class="menubox">
+                            <button class="btn btnbig" onclick="filterSelection('group_o')">큰가시고기목</button>
+                            <ul>
+                                <li><button class="btn" onclick="filterSelection('group_o1')">대치과</button></li>
+                            </ul>
+                        </div>
+
+                        <div class="menubox">
+                            <button class="btn btnbig" onclick="filterSelection('group_p')">홍어목</button>
+                            <ul>
+                                <li><button class="btn" onclick="filterSelection('group_p1')">홍어과</button></li>
+                            </ul>
+                        </div>
+        
+                        <div class="menubox">
+                            <button class="btn btnbig" onclick="filterSelection('group_q')">전기가오리목</button>
+                            <ul>
+                                <li><button class="btn" onclick="filterSelection('group_q1')">전기가오리과</button></li>
+                            </ul>
+                        </div>
+                    </div><!--3/4*3-->  
+
+                    <div class="menuline"><!--1/4big = small*3-->  
+                        <div class="linebox"><!--group for 3 small to fit big-->
+                            <div class="menubox">
+                                <button class="btn btnbig" onclick="filterSelection('group_f')">동갈치목</button>
+                                <ul>
+                                    <li> <button class="btn" onclick="filterSelection('group_f1')">동갈치과</button></li>
+                                </ul>
+                            </div>
+
+                            <div class="menubox">
+                                <button class="btn btnbig" onclick="filterSelection('group_m')">아귀목</button>
+                                <ul>
+                                    <li><button class="btn" onclick="filterSelection('group_m1')">씬벵이과</button></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="menubox">
+                                <button class="btn btnbig" onclick="filterSelection('group_s')">홍메치목</button>
+                                <ul>
+                                    <li><button class="btn" onclick="filterSelection('group_s1')">매퉁이과</button></li>
+                                </ul>
+                            </div>
+                        </div><!--grouping for3-->
+                    
+                        <div class="menubox">
+                            <button class="btn btnbig" onclick="filterSelection('group_l')">쏨뱅이목</button>
+                            <ul class="lineitem">
+                                <li><button class="btn" onclick="filterSelection('group_l1')">둑중개과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_l2')">성대과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_l3')">양볼락과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_l4')">양태과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_l5')">쥐노래미과</button></li>
+                            </ul>
+                        </div>
+
+                        <div class="menubox">
+                            <button class="btn btnbig" onclick="filterSelection('group_h')">복어목</button>
+                            <ul class="lineitem">
+                                <li><button class="btn" onclick="filterSelection('group_h1')">가시복과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_h2')">거북복과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_h3')">쥐치과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_h4')">참복과</button></li>                    
+                            </ul>
+                        </div>
+
+                        <div class="menubox">
+                            <button class="btn btnbig" onclick="filterSelection('group_a')">가자미목</button>
+                                <ul class="lineitem">
+                                    <li><button class="btn" onclick="filterSelection('group_a1')">넙치과</button></li>
+                                    <li><button class="btn" onclick="filterSelection('group_a2')">둥글넙치과</button></li>
+                                </ul>
+                        </div>
+                    </div><!--menuline--> 
+                </div><!--myBtnContainer-->
+
+                <div class="myBtnContainer2">  
+                    <div class="menuline">
+                        <div class="menubox1">
+                            <button class="btn btnbig" onclick="filterSelection('group_c')">농어목</button>
+                            <ul class="lineitem">
+                                <li><button class="btn" onclick="filterSelection('group_c1')">갈돔과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c2')">깃대돔과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c3')">나비고기과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c4')">놀래기과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c5')">돌돔과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c6')">동갈돔과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c7')">돛양태과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c8')">망둑어과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c9')">망상어과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c10')">바리과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c11')">비늘돔과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c12')">비늘베도라치과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c13')">샛돔과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c14')">양동미리과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c15')">육돈바리과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c16')">자리돔과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c17')">전갱이과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c18')">주걱치과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c19')">청베도라치과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c20')">청줄돔과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c21')">청황문절과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c22')">촉수과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c23')">파랑비늘돔과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c24')">하스돔과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c25')">활치과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c26')">황줄깜정이과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c27')">뿔돔과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c28')">게르치과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c29')">도미과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c30')">황줄돔과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c31')">가시돔과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c32')">다동가리과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c33')">먹도라치과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c34')">독가시치과</button></li>
+                                <li><button class="btn" onclick="filterSelection('group_c35')">양쥐돔과</button></li>
+                            </ul>
+                        </div><!--menubox1-->
+                    </div><!--menuline-->
+                </div> <!--container2-->
+            </div><!--left-bottom-->
+
+            <!--header right_navimenu--> 
+            <div class="right-navi">     
+                <div class="navimenu">
+                    <!--logo-->
+                    <div class="logoset">
+                        <a href="index.html">
+                            <img src="images/logo4_frame.png" class="logo_img ">
+                            <img src="images/logo4_blue.png" class="logo_text img_rotate">
+                        </a>
                     </div>
+                    <!--submenu-->
+                    <ul class="submenu">                        
+                        <li><a href="#"><img src="images/graph_ico1.png" alt="아이콘" class="li_icon"> 어종검색</a></li>
+                        <li><a href="#"><img src="images/graph_ico1.png" alt="아이콘" class="li_icon"> 물고기반 뉴스</a></li>
+                        <li><a href="#"><img src="images/graph_ico1.png" alt="아이콘" class="li_icon"> 굿다이버스</a></li>
+                        <li><a href="#"><img src="images/graph_ico1.png" alt="아이콘" class="li_icon"> 참고사이트</a></li>
+                    </ul>
                 </div>
-            </div> <!--mybtncontainer2-->
+
+                <div class="gototopbtn">
+                    <a href="index.html"><button class="gototop">△</button></a>
+                </div>
+            </div>
+
         </div><!--top-->
     </header>
 

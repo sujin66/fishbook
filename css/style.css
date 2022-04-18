@@ -40,8 +40,22 @@ header{
     padding: 50px 100px;
     box-sizing: border-box;
     overflow: hidden;
+    background-image: url(../images/bg4.png);
+    background-repeat: no-repeat;    
+    background-position: center bottom;
+    background-size: contain;
+    animation: 5s scroll ease-in-out;
 
 }
+/**********************************/
+/* headerbgimg-underwater */
+
+@keyframes scroll {
+    0%{transform: scale(105%);}
+    100%{transform: scale(100%);}
+}
+
+
 
 /**********************************/
 /* headerbg-fishes */
@@ -95,6 +109,7 @@ header{
     float:left;
     width: 85%;
     height: 100px;
+    z-index: 5;
     /* background-color: red; */
 }
 /* selectbtn */
@@ -102,32 +117,16 @@ header{
     float:left;
     width: 85%;
     height: 700px;
+    z-index: 5;
     /* background-color: #116714; */
 }
 /* navigation */
 .right-navi{
     float:left;
-    width: 15%;
+    width: 15%;    
+    z-index: 5;
     /* background-color: aqua; */
 }
-
-/**********************************/
-/* headerbgimg-underwater */
-.bgscroll2{
-    position:absolute;
-    left: 0px;
-    bottom: 0px;
-    z-index: 6;
-    width: 100%;
-    animation: scroll 2s ease-in-out;
-    opacity: 0.6;
-}
-
-@keyframes scroll {
-    0%{transform: translateY(2%);}
-    100%{transform: translateY(0%);}
-}
-
 
 
 
@@ -221,10 +220,10 @@ header{
     width: 470px;
     height: 540px;
     box-sizing: border-box;
-    border: 2px solid rgba(177, 174, 174, 0.5);
-    border-radius: 10px;
     margin-left: 10px;
     background-color: rgba(0,0,0,0.6);
+    border: 2px solid rgba(177, 174, 174, 0.5);
+    border-radius: 10px;
 }
 
 .menubox1 li{
@@ -288,13 +287,16 @@ header{
     position: fixed;
     top: 7%;
     right: 8%;
+    z-index: 99;
 }
+
 .logo_text{
     width: 150px;
     position: fixed;
     top: 7%;
     right: 8%;
     animation: img_rotate 100s infinite linear;
+    z-index: 99;
 }
 
 /*submenu list*/
